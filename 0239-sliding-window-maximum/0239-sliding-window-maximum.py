@@ -11,7 +11,7 @@ class Solution:
                 q.pop()
             q.append(item)
 
-            if i-k >= 0 and q[0] == nums[i-k]:
+            if i-k >= 0 and q[0] <= nums[i-k]:
                 q.popleft()
             answer.append(q[0])
 
