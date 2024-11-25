@@ -2,7 +2,6 @@ class Solution:
     def findKthLargest(self, nums: list[int], k: int) -> int:
         while k != 0:
             nums, k = self.find(nums, k)
-            print(nums, k)
         return nums[0]
 
     def find(self, nums: list[int], k: int) -> tuple[list[int], int]:
